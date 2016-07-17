@@ -257,7 +257,7 @@ load_symtab(char *filename)
 static int
 load_memmap(pid_t pid, struct mm *mm, int *nmmp)
 {
-	char raw[80000]; // this depends on the number of libraries an executable uses
+	char raw[800000]; // this depends on the number of libraries an executable uses
 	char name[MAX_NAME_LEN];
 	char *p;
 	unsigned long start, end;
